@@ -1,0 +1,10 @@
+{
+  "name": "BREACHLINE",
+  "short_name": "BREACHLINE",
+  "description": "Offline tactical FPS mission",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#050807",
+  "theme_color": "#050807",
+  "orientation": "landscape"
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BREACHLINE</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#050807">
+  <script defer src="lib/three.min.js"></script>
+  <script defer src="Game.js"></script>
+</head>
+<body>
+  <div id="game">
+    <div id="crosshair">+</div>
+
+    <div id="hud">
+      <div class="hud-left">
+        <div class="label">HEALTH</div>
+        <div class="health-bar">
+          <div id="healthFill"></div>
+        </div>
+        <div id="healthText">100</div>
+      </div>
+
+      <div class="hud-right">
+        <div id="ammo">30 / 90</div>
+        <div class="weapon">ASSAULT RIFLE</div>
+      </div>
+    </div>
+
+    <div id="message">
+      <div class="title">BREACHLINE</div>
+      <div>CLICK TO ENTER</div>
+      <small>WASD • SHIFT • SPACE • MOUSE • LEFT CLICK • R</small>
+    </div>
+
+    <div id="downloads">
+      <div class="download-label">DOWNLOAD GAME FILES</div>
+      <input id="downloadPassword" type="password" placeholder="PASSWORD" autocomplete="off">
+      <button id="unlockDownloads" type="button">UNLOCK</button>
+      <div id="downloadError" role="alert"></div>
+      <div id="downloadLinks" hidden>
+        <button id="downloadSite" type="button">DOWNLOAD PLAYABLE GAME</button>
+        <div class="download-help">This saves one file named BREACHLINE-GAME.html. Open that file to play.</div>
+      </div>
+    </div>
+
+    <div id="damage"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "mygame",
+  "version": "1.0.0",
+  "private": true,
+  "description": "BREACHLINE desktop game",
+  "main": "electron-main.js",
+  "scripts": {
+    "start": "electron .",
+    "build:win": "electron-builder --win portable --config.productName=mygame",
+    "build:linux": "electron-builder --linux AppImage --config.productName=mygame"
+  },
+  "devDependencies": {
+    "electron": "^38.1.0",
+    "electron-builder": "^26.0.12"
+  }
+}
